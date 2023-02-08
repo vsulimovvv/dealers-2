@@ -2930,7 +2930,7 @@ body.no-scroll {
   padding-bottom: 50px;
   font-size: 17px;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 17px;
 }
 @media (max-width: 1270px) {
   .descr {
@@ -2959,7 +2959,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .descr {
     font-size: calc(
-        15px + 5 *
+        15px + 2 *
           ((100vw - 360px) / 910)
       );
   }

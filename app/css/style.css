@@ -508,6 +508,18 @@ body.no-scroll {
   }
 }
 
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+  background-color: transparent;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-white);
+}
+
 .checkbox {
   position: relative;
   width: 100%;
@@ -1401,11 +1413,16 @@ body.no-scroll {
   }
 }
 .hero__item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .hero__link {
   font-weight: 700;
   font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
 }
 @media (max-width: 1270px) {
   .hero__link {
@@ -1414,6 +1431,11 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
+}
+.hero__link:hover {
+  -webkit-transform: translateX(3px);
+      -ms-transform: translateX(3px);
+          transform: translateX(3px);
 }
 .hero__link span {
   background-color: var(--color-accent);
@@ -2395,13 +2417,10 @@ body.no-scroll {
 .product-card__top {
   height: 255px;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
   border-radius: 15px;
-}
-.product-card__top:hover img {
-  -webkit-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-          transform: scale(1.15);
+  min-width: 0;
 }
 .product-card__top img {
   width: 100%;
@@ -2412,6 +2431,18 @@ body.no-scroll {
   -webkit-transition: 500ms ease;
   -o-transition: 500ms ease;
   transition: 500ms ease;
+}
+.product-card__slider {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.product-card__slider .swiper-pagination {
+  bottom: 25px;
+}
+.product-card__slide {
+  width: 100%;
+  height: 100%;
 }
 .product-card__title {
   font-size: 18px;
@@ -2453,19 +2484,6 @@ body.no-scroll {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-.product-card__body::after {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/product-card-decor.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  left: 15px;
-  top: -25px;
-  z-index: -1;
 }
 .product-card__more {
   position: absolute;
@@ -2563,6 +2581,7 @@ body.no-scroll {
 .marquises__item {
   width: 100%;
   height: 100%;
+  min-width: 0 !important;
 }
 
 .tents {

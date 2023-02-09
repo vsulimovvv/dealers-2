@@ -1,9 +1,27 @@
 window.addEventListener('DOMContentLoaded', () => {
-  //   // * ===== Mask input
-  //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
+  // * ===== Mask input
+  $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
-  //   // * ===== Nice Select
-  //   // $('select').niceSelect();
+  // * ===== Nice Select
+  // $('select').niceSelect();
+
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelectorAll('.product-card__slider ');
+
+    sliderEl.forEach((el) => {
+      if (el) {
+        new Swiper(el, {
+          slidesPerView: 1,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            // dynamicBullets: true,
+          },
+        });
+      }
+    });
+  })();
 
   // * ===== Accordion
   const toggleAccordion = (accordionControl, accordionContent, accordion) => {

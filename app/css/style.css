@@ -137,6 +137,7 @@ body {
   --color-dark: #34393d;
   --color-bg: #fffbf6;
   --color-accent: #351212;
+  --color-accent: #36454C;
 }
 
 @font-face {
@@ -987,7 +988,7 @@ body.no-scroll {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(53, 18, 18, 0.9);
+  background-color: rgba(50, 70, 72, 0.9);
   z-index: -1;
 }
 .footer__list {

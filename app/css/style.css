@@ -2422,6 +2422,7 @@ body.no-scroll {
   overflow: hidden;
   border-radius: 15px;
   min-width: 0;
+  cursor: pointer;
 }
 .product-card__top img {
   width: 100%;

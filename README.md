@@ -7,7 +7,6 @@
 Маркизы оконные: https://vsulimovvv.github.io/dealers-2/app/terrace.html  
 Маркизы корзинные: https://vsulimovvv.github.io/dealers-2/app/basket.html  
 Натяжные тенты: https://vsulimovvv.github.io/dealers-2/app/tents.html  
-Перголы: https://vsulimovvv.github.io/dealers-2/app/pergolas.html  
 Уличные зонты: https://vsulimovvv.github.io/dealers-2/app/umbrellas.html  
 Самолёты: https://vsulimovvv.github.io/dealers-2/app/aircrafts.html  
 Автоматика: https://vsulimovvv.github.io/dealers-2/app/automation.html  

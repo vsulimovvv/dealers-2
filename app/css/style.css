@@ -2679,38 +2679,75 @@ body.no-scroll {
       );
   }
 }
+.umbrellas__col {
+  min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .umbrellas__title {
   text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
-.umbrellas__list {
+@media (max-width: 767.98px) {
+  .umbrellas__title {
+    margin-bottom: 30px;
+  }
+}
+.umbrellas__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-}
-@media (max-width: 767.98px) {
-  .umbrellas__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-.umbrellas__item {
-  min-width: 0;
-  width: 100%;
   height: 100%;
 }
+@media (max-width: 991.98px) {
+  .umbrellas__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.umbrellas .product-card {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: auto;
+  height: 100%;
+  min-height: 580px;
+}
+@media (max-width: 991.98px) {
+  .umbrellas .product-card {
+    min-height: auto;
+  }
+}
 .umbrellas .product-card__top {
-  height: 400px;
+  height: 380px;
 }
 @media (max-width: 1270px) {
   .umbrellas .product-card__top {
     height: calc(
-        280px + 120 *
+        280px + 100 *
           ((100vw - 360px) / 910)
       );
   }
 }
+.umbrellas .product-card__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.umbrellas .product-card--aircrafts .product-card__title {
+  display: none;
+}
+
 .aircrafts {
   padding-top: 100px;
   padding-bottom: 100px;

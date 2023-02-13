@@ -1604,6 +1604,8 @@ body.no-scroll {
   -webkit-transition: 450ms ease-in-out;
   -o-transition: 450ms ease-in-out;
   transition: 450ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
   padding: 40px;
   padding-bottom: 20px;
 }

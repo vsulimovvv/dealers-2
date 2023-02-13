@@ -263,18 +263,16 @@ body.no-scroll {
 
 .logo {
   display: block;
-  width: 205px;
-  height: 80px;
   padding: 10px;
   background-color: var(--color-white);
   border-radius: 5px;
-  width: 205px;
-  height: 80px;
+  width: 160px;
+  height: 60px;
 }
 @media (max-width: 1270px) {
   .logo {
     width: calc(
-        140px + 65 *
+        140px + 20 *
           ((100vw - 360px) / 910)
       );
   }
@@ -282,7 +280,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .logo {
     height: calc(
-        60px + 20 *
+        60px + 0 *
           ((100vw - 360px) / 910)
       );
   }

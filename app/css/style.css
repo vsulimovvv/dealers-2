@@ -263,17 +263,35 @@ body.no-scroll {
 
 .logo {
   display: block;
-  width: 55px;
-  height: 50px;
+  width: 205px;
+  height: 80px;
+  padding: 10px;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  width: 205px;
+  height: 80px;
+}
+@media (max-width: 1270px) {
+  .logo {
+    width: calc(
+        140px + 65 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .logo {
+    height: calc(
+        60px + 20 *
+          ((100vw - 360px) / 910)
+      );
+  }
 }
 .logo img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-.logo:hover {
-  opacity: 0.8;
 }
 
 .section-title {
@@ -1117,7 +1135,7 @@ body.no-scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1136,15 +1154,28 @@ body.no-scroll {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.footer__logo {
-  margin-right: 24px;
+@media (max-width: 991.98px) {
+  .footer__bottom-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .footer__copy {
   line-height: 1;
 }
 .footer__logo {
-  width: 50px;
-  height: 50px;
+  margin-right: 24px;
+}
+@media (max-width: 991.98px) {
+  .footer__logo {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 .footer__socials {
   margin-bottom: 20px;
@@ -1157,7 +1188,7 @@ body.no-scroll {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .footer__contacts {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -1177,7 +1208,7 @@ body.no-scroll {
           align-items: flex-end;
   margin-right: 30px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .footer__contacts .footer-contacts {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1211,16 +1242,17 @@ body.no-scroll {
   background-color: var(--color-accent);
   color: var(--color-white);
   z-index: 10;
-  font-size: 18px;
   font-weight: 500;
   font-size: 17px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1300px) {
   .header {
-    font-size: calc(
-        15px + 3 *
-          ((100vw - 360px) / 910)
-      );
+    font-size: calc(15px + 2 * (100vw - 991px) / 279);
+  }
+}
+@media (max-width: 991.98px) {
+  .header {
+    font-size: 15px;
   }
 }
 @media (max-width: 991.98px) {
@@ -1231,6 +1263,9 @@ body.no-scroll {
 .header.scroll-header {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.header__logo {
+  margin-right: 24px;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -1260,6 +1295,16 @@ body.no-scroll {
   transition: 200ms ease;
   font-size: 18px;
 }
+@media (max-width: 1300px) {
+  .header__phone {
+    font-size: calc(16px + 2 * (100vw - 991px) / 279);
+  }
+}
+@media (max-width: 991.98px) {
+  .header__phone {
+    font-size: 16px;
+  }
+}
 .header__schedule {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1273,9 +1318,15 @@ body.no-scroll {
           align-items: flex-start;
   margin-right: 20px;
 }
+@media (max-width: 1300px) {
+  .header__schedule {
+    margin-right: calc(15px + 5 * (100vw - 991px) / 279);
+  }
+}
 @media (max-width: 991.98px) {
   .header__schedule {
     margin-left: auto;
+    margin-right: 20px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1288,9 +1339,15 @@ body.no-scroll {
   height: 40px;
   margin-right: 30px;
 }
+@media (max-width: 1300px) {
+  .header__whatsapp {
+    margin-right: calc(15px + 15 * (100vw - 991px) / 279);
+  }
+}
 @media (max-width: 767.98px) {
   .header__whatsapp {
     margin-left: auto;
+    margin-right: 20px;
   }
 }
 .header__whatsapp svg {
@@ -1299,6 +1356,16 @@ body.no-scroll {
 }
 .header__text {
   font-size: 15px;
+}
+@media (max-width: 1300px) {
+  .header__text {
+    font-size: calc(14px + 1 * (100vw - 991px) / 279);
+  }
+}
+@media (max-width: 991.98px) {
+  .header__text {
+    font-size: 14px;
+  }
 }
 .header__toggle {
   -ms-flex-negative: 0;
@@ -1623,7 +1690,7 @@ body.no-scroll {
     height: calc(100vh - 80px);
   }
 }
-@media (max-width: 359.98px) {
+@media (max-width: 767.98px) {
   .mobile-menu {
     width: 100%;
   }

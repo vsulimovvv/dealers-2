@@ -9,4 +9,3 @@
 Натяжные тенты: https://vsulimovvv.github.io/dealers-2/app/tents.html  
 Уличные зонты: https://vsulimovvv.github.io/dealers-2/app/umbrellas.html  
 Самолёты: https://vsulimovvv.github.io/dealers-2/app/aircrafts.html  
-Автоматика: https://vsulimovvv.github.io/dealers-2/app/automation.html

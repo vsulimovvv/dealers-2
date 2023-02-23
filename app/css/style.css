@@ -3121,6 +3121,18 @@ body.no-scroll {
 .descr__text p:not(:last-child) {
   margin-bottom: 30px;
 }
+.descr__img {
+  height: 100%;
+  width: 100%;
+}
+.descr__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  max-height: 660px;
+}
 .descr__row {
   display: -ms-grid;
   display: grid;
@@ -3137,14 +3149,6 @@ body.no-scroll {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-}
-.descr__row img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px;
-  max-height: 660px;
 }
 .descr__row--img-reverse {
   -ms-grid-columns: 0.8fr 1fr;
